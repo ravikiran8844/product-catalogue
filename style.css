@@ -3,7 +3,8 @@ body{
 }
 
 .header-section{
-    background: #AA2424;
+    background: rgb(102,30,27);
+    background: linear-gradient(90deg, rgba(102,30,27,1) 0%, rgba(163,46,40,1) 35%, rgba(163,46,40,1) 100%);
 }
 
 
