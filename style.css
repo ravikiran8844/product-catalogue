@@ -50,6 +50,15 @@ body{
         row-gap: 40px;
     } 
 }
+
+@media (min-width:992px) {
+    .products-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 40px;
+    } 
+}
+
 .products-grid__item{
     display: flex;
     flex-direction: column;
