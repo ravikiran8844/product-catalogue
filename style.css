@@ -17,7 +17,21 @@ body{
 .products-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    row-gap: 20px;
+}
+
+.products-grid > div {
+    position: relative;
+}
+
+.products-grid > div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Adjust this value to control the spacing between the rows */
+    width: 100%;
+    height: 1px;
+    background-color: #EDD9C8;; /* You can change the color of the line here */
 }
 
 
@@ -25,24 +39,29 @@ body{
     .products-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        row-gap: 20px;
     } 
 }
 @media (min-width:768px) {
     .products-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
+        row-gap: 40px;
     } 
 }
 .products-grid__item{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 10px;
+}
+.products-grid__item-img-wrapper{
+    background-color: #fff;
 }
 
 .products-grid__item img{
     aspect-ratio: 1;
     width: 100%;
     height: auto;
+    padding: 20px;
 }
